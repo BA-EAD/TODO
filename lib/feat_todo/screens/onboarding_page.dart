@@ -1,4 +1,3 @@
-import 'package:flutter/material.dart';
 import 'package:gap/gap.dart';
 import 'package:to_do_app/utils/app_imports.dart';
 import 'package:to_do_app/widgets/primary_cta.dart';
@@ -8,8 +7,6 @@ class OnboardPage extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    final locale = AppLocalizations.of(context)!;
-
     return Scaffold(
       backgroundColor: AppColors.primaryColor,
       body: Padding(

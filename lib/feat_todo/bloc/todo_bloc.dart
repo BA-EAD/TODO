@@ -29,7 +29,7 @@ class TodoBloc extends Bloc<TodoEvent, TodoState> {
         emit(TodoLoading());
 
         // Add 2-second delay
-        await Future.delayed(Duration(seconds: 2));
+        await Future.delayed(const Duration(seconds: 2));
 
         final todosFb = await fireStoreTodoRepository.getTodos();
         emit(RemoteTodosLoaded(todosFb));

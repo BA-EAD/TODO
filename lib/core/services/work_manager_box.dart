@@ -11,12 +11,12 @@ class WorkManagerBox {
   static void initializeHiveBoxes() async {
     workManagerBox = await Hive.openBox<bool>(AppStrings.isWorkMangerStarted);
     frequencyBox = await Hive.openBox<String>(AppStrings.frequencyBox);
-    debugPrint('WORKMANAGERBOX: ${workManagerBox}', wrapWidth: 1024);
-    debugPrint('FREQUENCYBOX: ${frequencyBox}', wrapWidth: 1024);
+    debugPrint('WORKMANAGERBOX: $workManagerBox', wrapWidth: 1024);
+    debugPrint('FREQUENCYBOX: $frequencyBox', wrapWidth: 1024);
   }
 
   static void setupBackgroundProcess() async {
-    debugPrint('WORKMANAGERBOX====>: ${workManagerBox}', wrapWidth: 1024);
+    debugPrint('WORKMANAGERBOX====>: $workManagerBox', wrapWidth: 1024);
     final isStarted = workManagerBox.get(AppStrings.isWorkMangerStarted);
     if (isStarted == null) {
       await Workmanager().cancelAll();
