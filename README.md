@@ -21,8 +21,8 @@ TaskMaster is your go-to app for managing and organizing daily tasks with ease.
 
 ## Platforms Supported 📱
 
-- ✅ **Android**[portrait]
-- 🚧 **iOS**[portrait]
+- ✅ **Android**[Portrait]
+- 🚧 **iOS**[Portrait]
 
 ## Key Features ⚡
 - 🌍 Bilingual support for both Arabic and English users.
